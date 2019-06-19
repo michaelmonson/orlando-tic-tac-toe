@@ -1,9 +1,12 @@
 {
-  "name": "dir",
+  "name": "OrlandoTicTacToe",
   "version": "1.0.0",
   "description": "Orlando's Tic Tac Toe Game",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "npm clean && webpack --config webpack.config.js --progress",
+    "start": "webpack-dev-server --config webpack.config.js --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
